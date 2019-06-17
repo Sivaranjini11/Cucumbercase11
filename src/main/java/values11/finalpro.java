@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 
 public class finalpro {
 	WebDriver driver;
@@ -39,12 +40,12 @@ public class finalpro {
 	
 	}
 
-	@Given("enter product name as {string}")
+	@Then("enter product name as {string}")
 	public void enter_product_name_as(String string) {
 		driver.findElement(By.xpath("//*[@id=\"prodid\"]")).sendKeys(string);
 	}
 
-	@Given("enter price as {string}")
+	@Then("enter price as {string}")
 	public void enter_price_as(String string) {
 		driver.findElement(By.xpath("//*[@id=\"priceid\"]")).sendKeys(string);
 	}

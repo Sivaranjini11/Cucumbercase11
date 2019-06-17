@@ -1,15 +1,21 @@
+Feature: Login testmeapp application
+  I want to login to testmeapp
 
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
-
+   Scenario: Admin Login
+   Given I want to enter "Admin" as username
+   And I want to enter "password456" as password
+   Then click on login
+   And i want to enter category name
+    And i want to enter subcategory name
+    And enter "<product_name>" 
+    | product_name  | 
+    | BasketBall    |     
+    | VolleyBall    |   
+    And enter price as "$300"
+    And enter quantity as "10"
+    And enter brand as "sports"
+    And enter description as "Sport Equipments"
  
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+ 
 
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+  
